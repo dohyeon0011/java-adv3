@@ -1,0 +1,29 @@
+package lambda.lambda5.filter;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class FilterMainV3 {
+
+    public static void main(String[] args) {
+        List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        // 짝수만 거르기
+        System.out.println("evenPredicate = " + filter(numbers, n1 -> n1 % 2 == 0));
+
+        // 홀수만 거르기
+        System.out.println("oddPredicate = " + filter(numbers, n -> n % 2 == 1));
+    }
+
+    private static List<Integer> filter(List<Integer> numbers, Predicate<Integer> predicate) {
+        List<Integer> filtered = new ArrayList<>();
+        for (Integer number : numbers) {
+            boolean testResult = predicate.test(number);
+            if (testResult) {
+                filtered.add(number);
+            }
+        }
+        return filtered;
+    }
+}
