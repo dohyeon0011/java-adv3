@@ -12,11 +12,11 @@ public class MyStreamV3Main {
                 new Student("Tomato", 40)
         );
 
-        // 1. 점수가 80점 이상인 학생의 이름을 추출해라.
+        // 1. 점수가 80점 이상인 학생의 이름을 추출하기
         List<String> result1 = ex1(students);
         System.out.println("result1 = " + result1);
         
-        // 2. 점수가 80점 이상이면서, 이름이 5글자인 학생의 이름을 대문자로 추출해라.
+        // 2. 점수가 80점 이상이면서, 이름이 5글자인 학생의 이름을 대문자로 추출하기
         List<String> result2 = ex2(students);
         System.out.println("result2 = " + result2);
     }

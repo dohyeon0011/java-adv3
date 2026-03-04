@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-// Generic 타입 추가
+// Generic 타입 추가 버전
 public class MyStreamV3<T> {
 
     private List<T> internalList;
